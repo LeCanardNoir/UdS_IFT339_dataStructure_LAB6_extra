@@ -24,7 +24,7 @@ int main()
     int nbChiffresTotaux;           // Le nombre total de chiffres
     int nbChiffresAChoisir;         // Le nombre de chiffre à choisir
     long int nbCombinaisons;        // Le nombre de combinaisons possibles
-    
+    cout << "LOTTO UDS" << endl;
     cout << "Ce programme vous donne la probabilite de gagner la \"loto UdeS\". \n";
     entrerInfosTirage(nbChiffresTotaux, nbChiffresAChoisir);
     nbCombinaisons = calculeNbCombinaisons(nbChiffresTotaux, nbChiffresAChoisir);
@@ -32,6 +32,7 @@ int main()
     cout << fixed << showpoint << setprecision(4);
     cout << "\nVotre chance de gagner la lotterie est de "<< "une chance sur " << nbCombinaisons << ".\n";
     cout << "Ce qui equivaut a une probabilite de " << (1.0 / nbCombinaisons)    << "\n";
+    cout << endl << endl;
     
     return 0;
 }
